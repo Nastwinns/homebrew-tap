@@ -4,23 +4,23 @@
 class Hawser < Formula
   desc "Reproducible multi-repo stack composition + cross-repo MR orchestration"
   homepage "https://github.com/Nastwinns/hawser"
-  version "0.1.9"
+  version "0.1.10"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     on_arm do
       url "https://github.com/Nastwinns/hawser/releases/download/v#{version}/haw-#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "6c55696e9deef6d9c36619c2f1e51b23237f05e11e9c98df8c7d6325b100cfd6"
+      sha256 "2edc2238e47d87b0e0f0ee4953695907df345ed97d34a0035ab8f15f4947a74b"
     end
     on_intel do
       url "https://github.com/Nastwinns/hawser/releases/download/v#{version}/haw-#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "b0fe145cc943e0981c418361a2e257a47100f87a26e1f918d66b430876e20ed6"
+      sha256 "3855ac6113916161494b78e3129ec73ccf635dd34b71c7bef76c375b808f6b83"
     end
   end
 
   on_linux do
     url "https://github.com/Nastwinns/hawser/releases/download/v#{version}/haw-#{version}-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "884c306ebad5074e80763e7ef2607f4bc5ce96709da54c90afd0ddd7ddcc73fa"
+    sha256 "f82d576018c17fce1589a3349855f495c7aba6d220566a9922dd7c26346c399b"
   end
 
   def install
